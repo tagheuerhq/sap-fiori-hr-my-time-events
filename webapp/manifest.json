@@ -34,14 +34,14 @@
 		"extends": {
 			"component": "hcm.fab.mytimeevents",
 			"extensions": {
-				"sap.ui.viewModifications": {
+                "sap.ui.viewReplacements": {
+                    "hcm.fab.mytimeevents.view.ChangeView": {
+                        "viewName": "hcm.fab.mytimeevents.HCMFAB_TIME_EVTExtension.view.ChangeViewCustom",
+                        "type": "XML"
+                    },
 					"hcm.fab.mytimeevents.view.Overview": {
-						"quickEntry": {
-							"visible": false
-						},
-						"download": {
-							"visible": false
-						}
+                        "viewName": "hcm.fab.mytimeevents.HCMFAB_TIME_EVTExtension.view.OverviewCustom",
+                        "type": "XML"
 					}
 				}
 			}
